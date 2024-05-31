@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*문제1*/
+        .box_control1{
+            
+            display: flex;
+            justify-content: space-between;
+            border :1px solid red;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: white;
+            
+        }
+        .inner_box1{
+            
+            display: flex;
+            
+        }
+        .div2_right{
+            margin-right: 5px;
+        }
+        /*문제2*/
+        .box_control2{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid blue;
+            
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: white;
+        }
+        
+        .div2_center{
+            align-self: center;
+        }
+        .div3_end{
+            align-self: flex-end;
+        }
+        /*문제3*/
+        .box_control3{
+            border: 1px solid green;
+            display: flex;
+            justify-content: center;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: white;
+            position: relative;
+            justify-content: center;  
+        }
+        .box3_1{
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            color: black;
+            position: absolute;
+            top: 432px;    
+        }
+        /*문제4*/
+        .box_control4{
+            border: 1px solid pink;
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: white;
+        }
+        .box4_1{
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            color: white;
+            position: relative;
+            left: 50px;
+            bottom: 50px;
+        }
+        /*문제5*/
+        .box5{
+            width: 300px;
+            height: 150px;
+            background-color: aqua;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+  
+        }
+        .box5_1_1{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: white;
+            position:absolute;
+            left: 0px;
+            bottom: 0px;
+        }
+        .box5_1_2{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: white;
+            position:absolute;
+            right: 0px;
+            top: 0px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <!--문제1-->
+    <div class="box_control1">
+        <div class="box1">
+            div1
+        </div>
+        <div class="inner_box1">
+            <div class="box1 div2_right">
+            div2
+            </div>
+            <div class="box1">
+                div3
+            </div>
+        </div> 
+    </div>
+    <!--문제2-->
+    <div class="box_control2">
+        <div class="box2">
+            div1
+        </div>
+        <div class="box2 div2_center">
+            div2
+        </div>
+        <div class="box2 div3_end">
+            div3
+        </div>
+    </div>
+    <!--문제3-->
+    <div class="box_control3">
+        <div class="box3">
+            div1
+        </div>
+        <div class="box3_1">
+            div2
+        </div>
+    </div>
+    <!--문제4-->
+    <div class="box_control4">
+        <div class="box4">
+            div1
+        </div>
+        <div class="box4_1">
+            div2
+        </div>
+    </div>
+    <!--문제5-->
+    <div>
+        <div class="box5">
+            div1
+            <div class="box5_1_1">
+                div2
+            </div>
+            <div class="box5_1_2">
+                div3
+            </div>
+        </div>
+    </div>
+</body>
+</html>
